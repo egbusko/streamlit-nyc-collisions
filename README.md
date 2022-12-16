@@ -3,6 +3,8 @@
 
 The Motor Vehicle Collisions crash table contains details on the crash event. Each row represents a crash event. The Motor Vehicle Collisions data tables contain information from all police reported motor vehicle collisions in NYC.
 
+[Application link](https://egbusko-streamlit-nyc-collisions-app-42kv7m.streamlit.app/)
+
 used dataset:
 https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
 
