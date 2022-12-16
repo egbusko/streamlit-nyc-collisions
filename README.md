@@ -6,4 +6,4 @@ The Motor Vehicle Collisions crash table contains details on the crash event. Ea
 used dataset:
 https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
 
-<img src="streamlit-nyc-collisions.gif" alt="streamlit-nyc-collisions" width="250" height="250"/>
+<img src="streamlit-nyc-collisions.gif" alt="streamlit-nyc-collisions" width="1200" height="594"/>
