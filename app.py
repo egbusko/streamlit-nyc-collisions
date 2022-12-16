@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pydeck as pdk
-import plotly.express as px
 
 DATA_URL = (
 "Motor_Vehicle_Collisions_-_Crashes.csv"
@@ -65,8 +64,9 @@ filtered = data[
 ]
 hist = np.histogram(filtered['date/time'].dt.minute, bins=60, range=(0, 60))[0]
 chart_data = pd.DataFrame({'minute': range(60), 'crashes':hist})
-fig = px.bar(chart_data, x = 'minute', y='crashes', hover_data=['minute', 'crashes'], height=400)
-st.write(fig)
+st.bar_chart(chart_data, x = 'minute', height=400, use_container_width=True)
+# fig = px.bar(chart_data, x = 'minute', y='crashes', hover_data=['minute', 'crashes'], height=400)
+# st.write(fig)
 
 st.header("Top 5 dangerous streets by affected type")
 select = st.selectbox('Affected type of people', ['Pedestrians 🚶', 'Cyclists 🚴', 'Motorists 👨‍🦽'])
